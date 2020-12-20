@@ -14,3 +14,6 @@ If you are a seller, just fill in all the details and post your product and then
 
 ## Forthcoming
 There is always a scope of improvement in everything including this project as well. New and updated version of this project is firmly on its way which would contain features like Authentication and access to your media files to upload them easily. Also working on including maps in the address section. Hang on!!
+
+## Hosted
+The live site is hosted at https://sleepy-retreat-60004.herokuapp.com/
