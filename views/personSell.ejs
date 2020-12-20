@@ -1,0 +1,84 @@
+
+<%- include("partials/header"); -%>
+
+<section id="sell">
+  <h4 class="sell-head">POST YOUR PRODUCT</h4>
+  <hr>
+   <div class="sell-div">
+     <form class="" action="/personSell" method="post">
+    <div class="select-category">
+      <h5>SELECT CATEGORY</h5>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <input type="radio" id="phones" name="category" value="phones">
+          <label for="phones"> Phones <i class="category-link fas fa-mobile-alt"></i></label><br>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <input type="radio" id="computers" name="category" value="computers">
+          <label for="computers"> Computers <i class="category-link fas fa-laptop"></i></label><br>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <input type="radio" id="laptops" name="category" value="laptops">
+          <label for="laptops"> Laptops <i class="category-link fas fa-tv"></i></label><br>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <input type="radio" id="drafters" name="category" value="drafters">
+          <label for="drafters"> Drafters <i class="category-link far fa-compass"></i></label><br>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <input type="radio" id="labCoats" name="category" value="labCoats">
+          <label for="labCoats"> LabCoats <i class="category-link fas fa-user-secret"></i> </label><br>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <input type="radio" id="others" name="category" value="others">
+          <label for="others"> Others <i class="category-link far fa-question-circle"></i></label><br>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="product-details">
+      <h5>INCLUDE SOME DETAILS</h5>
+      <br>
+      <label>BRAND</label>
+      <input class="sell-input form-control" type="text" name="itemName" autocomplete="off">
+
+      <label>QUANTITY</label>
+      <input class="sell-input form-control" type="text" name="itemQuantity" autocomplete="off">
+
+      <label>SET A PRICE</label>
+      <input class="sell-input form-control" type="text" name="itemPrice" autocomplete="off">
+
+      <label>PRODUCT-IMAGE LINK</label>
+      <input class="sell-input form-control" type="text" name="itemImage" autocomplete="off">
+
+      <label>PRODUCT DESCRIPTION</label>
+      <textarea class="sell-input form-control" name="itemDescription" rows="5" cols="30"></textarea>
+    </div>
+    <hr>
+
+    <div class="seller-details">
+       <h5>INCLUDE YOUR DETAILS</h5>
+       <br>
+       <label>YOUR NAME</label>
+       <input class="sell-input form-control" type="text" name="personName" autocomplete="off">
+
+       <label>YOUR ADDRESS</label>
+       <input class="sell-input form-control" type="text" name="personAddress" autocomplete="off">
+
+       <label>YOUR PHONE NUMBER</label>
+       <input class="sell-input form-control" type="text" name="personPhone" autocomplete="off">
+
+       <label>YOUR EMAIL</label>
+       <input class="sell-input form-control" type="email" name="PersonEmail" autocomplete="off">
+    </div>
+    <hr>
+    <div class="seller-button">
+       <button class="btn sell-btn btn-primary" type="submit" name="button">POST</button>
+    </div>
+    </form>
+  </div>
+</section>
+
+<%- include("partials/footer"); -%>

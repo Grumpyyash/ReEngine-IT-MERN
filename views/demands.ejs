@@ -1,0 +1,39 @@
+<%- include("partials/header"); -%>
+    <div class="demand-header">
+      <h4>What People Want..</h4>
+    </div>
+
+    <hr class="hr">
+
+    <div class="home-header">
+      <div class="row cards-row">
+
+        <% personBuy.forEach(function(item, index){ %>
+
+        <div class="col-lg-3 col-sm-12">
+          <div class="card" style="width: 18rem;">
+          <div class="card-body">
+          <h6 class="card-text"><%=item.name%> is looking for <%=item.itemName%></h6>
+          <h6 class="card-text">Brand: <%=item.itemBrand%></h6>
+          <h6 class="card-text">Price-Range: <%=item.itemPrice%></h6>
+          <h6 class="card-title">Quantity: <%=item.itemQuantity%></h6>
+          <p><%= item.itemDescription %></p>
+          <hr>
+          <h6 class="card-text">Buyer's Info</h6>
+          <p>Address: <%= item.address %></p>
+          <p>Phone: <a href="tel:<%= item.phone %>"><%= item.phone %></a></p>
+          <p>Email: <a href="mailto:<%= item.email %>"><%= item.email %></a></p>
+          <hr>
+          <h5>Can you help him?</h5>
+          <button href="" type="button" class="btn actual-btn btn-sm btn-outline-info"><a class="consumer-button" href="tel:<%= item.phone %>">CALL NOW</a></button>
+          <button href="" type="button" class="btn actual-btn btn-sm btn-outline-info"><a class="consumer-button" href="mailto:<%= item.email %>">MAIL NOW</a></button>
+
+          </div>
+         </div>
+      </div>
+      <% }) %>
+      </div>
+      </div>
+
+
+<%- include("partials/footer"); -%>

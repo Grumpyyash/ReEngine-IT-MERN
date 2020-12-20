@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+
+<section id="actual">
+  <h4><%=ItemName%></h4>
+  <hr>
+  <div class="row actual-product-div">
+    <div class="col-lg-6 col-sm-12 actual-img-div">
+      <img class="actual-img" src="<%= Image %>" alt="">
+    </div>
+    <div class="col-lg-6 col-sm-12 actual-product-detail">
+      <h1>₹ <%= Price %></h1> <h3 class="actual-icon"><i class="fas fa-share-alt"></i> <i class="far fa-heart"></i></h3>
+      <h5 class="actual-h5">CATEGORY: <%= Category %></h5>
+      <h5 class="actual-h5">BRAND NAME: <%=ItemName%></h5>
+      <h5 class="actual-h5">QUANTITY: <%=Quantity%></h5>
+      <p><%= Description %></p>
+      <hr>
+      <h3>Seller Description</h3>
+      <h5 class="actual-h5">NAME: <%= SellerName %></h5>
+      <h5 class="actual-h5">PHONE NO: <a href="tel:<%= Phone %>">+91-<%= Phone %></a></h5>
+      <h5 class="actual-h5">EMAIL: <a href="mailto:<%= Email %>"><%= Email %></a></h5>
+      <h5 class="actual-h5">ADDRESS: <%= Address %></h5>
+    </div>
+  </div>
+  <button href="" type="button" class="btn actual-btn btn-lg btn-outline-info"><a class="consumer-button" href="tel:<%= Phone %>">CALL NOW</a></button>
+  <button href="" type="button" class="btn actual-btn btn-lg btn-outline-info"><a class="consumer-button" href="mailto:<%= Email %>">MAIL NOW</a></button>
+</section>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,28 @@
+
+<%- include("partials/header"); -%>
+
+<div class="home-header">
+  <div class="home-h4">
+    <h4>EXPERIENCE THE PLATHERA</h4>
+    <hr>
+  </div>
+  <div class="row cards-row">
+
+    <% personSell.forEach(function(item, index){ %>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="<%= item.image %>">
+      <div class="card-body">
+      <h5 class="card-title"><%=item.itemName%></h5>
+      <h5 class="card-title">Catgory: <%= item.category %></h5>
+      <h5 class="card-text">₹ <%= item.price %> only</h5>
+      <a href="/products/<%=item.itemName%>" class="btn btn-primary">Show More</a>
+      </div>
+     </div>
+  </div>
+  <% }) %>
+  </div>
+  </div>
+
+<%- include("partials/footer"); -%>

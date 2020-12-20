@@ -1,0 +1,51 @@
+<%- include("partials/header") -%>
+
+<section id="sell">
+  <h4 class="sell-head">POST A DEMAND</h4>
+  <hr>
+  <form class="" action="/demands" method="post">
+   <div class="sell-div">
+
+    <div class="product-details">
+      <h5>GIVE SOME DETAILS</h5>
+      <br>
+      <label>WHAT DO YOU WANT</label>
+      <input class="sell-input form-control" type="text" name="itemName" autocomplete="off">
+
+      <label>BRAND</label>
+      <input class="sell-input form-control" type="text" name="itemBrand" autocomplete="off">
+
+      <label>QUANTITY</label>
+      <input class="sell-input form-control" type="text" name="itemQuantity" autocomplete="off">
+
+      <label>SET A PRICE</label>
+      <input class="sell-input form-control" type="text" name="itemPrice" autocomplete="off">
+
+      <label>SPECIFIC DESCRIPTION</label>
+      <textarea class="sell-input form-control" name="itemDescription" rows="5" cols="30"></textarea>
+    </div>
+    <hr>
+    <div class="seller-details">
+       <h5>GIVE YOUR DETAILS</h5>
+       <br>
+       <label>YOUR NAME</label>
+       <input class="sell-input form-control" type="text" name="yourName" autocomplete="off">
+
+       <label>YOUR ADDRESS</label>
+       <input class="sell-input form-control" type="text" name="yourAddress" autocomplete="off">
+
+       <label>YOUR PHONE NUMBER</label>
+       <input class="sell-input form-control" type="text" name="yourPhone" autocomplete="off">
+
+       <label>YOUR EMAIL</label>
+       <input class="sell-input form-control" type="email" name="yourEmail" autocomplete="off">
+    </div>
+    <hr>
+    <div class="seller-button">
+       <button class="btn sell-btn btn-primary" type="submit" name="button">POST</button>
+    </div>
+  </div>
+  </form>
+</section>
+
+<%- include("partials/footer") -%>

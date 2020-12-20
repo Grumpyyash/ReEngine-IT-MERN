@@ -1,0 +1,59 @@
+<%- include("partials/header") -%>
+
+
+
+
+
+<div class="home-header">
+
+      <div class="home-h4">
+      <h4>Plathera of <%= name %></h4>
+      </div>
+      <hr>
+
+      <div class="row cards-row">
+      <% if(item.length == 0){ %>
+        <div class="col-lg-6 col-sm-12">
+          <div class="">
+            <img class="error-img" src="https://images.unsplash.com/photo-1532003885409-ed84d334f6cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="not-found">
+            <h4>Sorry :(<br>
+            This Section is Empty.<br>
+            Try Searching or Post <br>
+            Your Demand <br>
+            </h4>
+            <button href="" type="button" class="btn actual-btn btn-lg btn-outline-info"><a class="consumer-button" href="/consumer">POST NOW</a></button>
+          </div>
+        </div>
+
+        <%} else {%>
+
+
+        <% item.forEach(function(item, index){ %>
+
+        <div class="col-lg-3 col-sm-12">
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="<%= item.image %>">
+          <div class="card-body">
+          <h5 class="card-title"><%=item.itemName%></h5>
+          <h5 class="card-title">Catgory: <%= item.category %></h5>
+          <h5 class="card-text">₹ <%= item.price %> only</h5>
+          <a href="/products/<%=item.itemName%>" class="btn btn-primary anchor-button">Show More</a>
+          </div>
+         </div>
+      </div>
+
+
+      <% }) %>
+      <%}%>
+      </div>
+
+
+      </div>
+
+
+
+<%- include("partials/footer") -%>

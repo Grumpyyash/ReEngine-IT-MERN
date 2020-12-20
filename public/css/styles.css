@@ -1,0 +1,356 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.home-h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+.navbar {
+  background-color: #2874f0;
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: gray;
+}
+.navbar-toggler {
+  color: white !important;
+}
+.navbar-toggler-icon {
+  color: white !important;
+}
+.collapsed {
+  color: white !important;
+}
+.navbar-nav {
+  margin-left: 50px;
+}
+.form-search {
+ width: 500px;
+ height: 35px;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ border-color: white;
+ border-width: 1px;
+}
+.search-button {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.category-carousel {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.category-row {
+  text-align: center;
+}
+.category-link {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: black;
+}
+.category-link:hover {
+  color: black;
+  text-decoration: none;
+}
+.horizontal-rule {
+   border-top: 5px solid black;
+}
+::placeholder {
+  padding-left: 10px;
+}
+.cards-row {
+  width: 87%;
+  margin-left: 7%;
+}
+.card {
+  max-width: 250px;
+  max-height: auto;
+  margin-bottom: 9%;
+}
+
+#sell {
+  text-align: center;
+  margin-top: 20px;
+}
+.sell-div {
+  text-align: left;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.select-category{
+  margin-left: 20px;
+}
+.product-details{
+  margin-left: 20px;
+}
+.home-header {
+  margin-top: 30px;
+}
+.detail-h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+.not-found {
+  text-align: center;
+  margin-top: 80px;
+  margin-right: 37px;
+}
+.anchor-footer {
+  color: white;
+}
+.consumer-button {
+  color: black;
+}
+.consumer-button:hover {
+  color: white;
+  text-decoration: none;
+}
+.anchor-footer:hover {
+  color: #00B9F1;
+  text-decoration: none;
+}
+.sell-input {
+  width: 600px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5px;
+  border-radius: 0;
+  margin-bottom: 3%;
+}
+.seller-details {
+  margin-left: 20px;
+}
+.seller-button {
+  margin-left: 20px;
+}
+.sell-btn {
+  margin-bottom: 2%;
+}
+#actual {
+  text-align: center;
+  margin-top: 20px;
+}
+.actual-product-div {
+  width: 90%;
+  margin-left: 4.5%;
+}
+.actual-img-div {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.actual-product-detail {
+  text-align: left;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  margin-top: 2%;
+}
+.actual-img {
+  width: 100%;
+  height: 100%;
+}
+.actual-icon {
+  position: absolute;
+  right: 3%;
+  top: 2%;
+}
+.actual-btn {
+  margin-top: 40px;
+}
+.actual-h5 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.demand-header {
+  margin-top: 20px;
+  text-align: center;
+}
+.footer {
+  background-color: #002E6E;
+  color: white;
+  margin-top: 10%;
+  padding-top: 20px;
+}
+.about-project {
+  width: 72%;
+  margin-left: 30%;
+}
+.footer-links {
+  margin-left: 39%;
+}
+.about-developer {
+  margin-left: 10%;
+}
+.footer-h4 {
+  color: #00B9F1;
+  margin-bottom: 10px;
+}
+.manual {
+  color: #00B9F1;
+}
+.footer-icon {
+  margin-right: 5px;
+}
+.category {
+  text-align: center;
+  margin-top: 40px;
+}
+.category-main-div {
+  color: gray;
+  text-align: left;
+  width: 500px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  margin-left: 33%;
+  margin-top: 30px;
+}
+.mobile {
+  margin-right: 20px;
+}
+.category-icon {
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.category-right {
+  position: absolute;
+  right: 20px;
+}
+.category-anchor {
+  color: grey;
+}
+.category-anchor:hover {
+  color: black;
+  text-decoration: none;
+}
+.anchor {
+  color: white;
+  text-decoration: none;
+}
+.anchor:hover {
+  color: black;
+}
+.anchor-button {
+  color: black;
+  text-decoration: none;
+}
+.anchor-button: hover {
+  color: black;
+  text-decoration: none;
+}
+.manual-link {
+  text-align: center;
+}
+.manual-icon {
+  color: #002E6E;
+  font-size: 30px;
+}
+.manual-icon:hover {
+  color: #00B9F1;
+  text-decoration: none;
+}
+@media (max-width: 600px){
+  .form-search {
+   width: 270px;
+   height: 35px;
+  }
+  ::placeholder {
+    padding-left: 10px;
+  }
+  .search-button {
+    font-size: 13px;
+    margin-bottom: 6px;
+    margin-left: 3px;
+  }
+  .navbar-nav {
+    margin-left: 0;
+  }
+  .cards-row {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .sell-div {
+    text-align: left;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .select-category{
+    margin-left: 10px;
+  }
+  .product-details{
+    margin-left: 10px;
+  }
+  .seller-details {
+    margin-left: 10px;
+  }
+  .seller-button {
+    margin-left: 10px;
+  }
+  .sell-input {
+    width: 270px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    border-radius: 0;
+    margin-bottom: 2%;
+  }
+  #sell {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .sell-head {
+    margin-left: 0%;
+  }
+  .about-project {
+    width: 72%;
+    margin-left: 12%;
+    margin-bottom: 25px;
+  }
+  .footer-links {
+    margin-left: 12%;
+    margin-bottom: 25px;
+  }
+  .about-developer {
+    margin-left: 12%;
+    margin-bottom: 25px;
+  }
+  .category-main-div {
+    color: gray;
+    text-align: left;
+    width: 300px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-left: 7%;
+    margin-top: 30px;
+  }
+  .error-img {
+    width: 280px;
+    height: 220px;
+    padding-right: 37px;
+  }
+
+}
