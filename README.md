@@ -14,3 +14,77 @@ If you are a seller, just fill in all the details and post your product and then
 
 ## Forthcoming
 There is always a scope of improvement in everything including this project as well. New and updated version of this project is firmly on its way which would contain features like Authentication and access to your media files to upload them easily. Also working on including maps in the address section. Hang on!!
+
+## Visit Online
+
+This website is hosted at [https://sleepy-retreat-60004.herokuapp.com/](https://sleepy-retreat-60004.herokuapp.com/)
+
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Your machine should have Npm(or Yarn), Node.js, and MongoDB installed to use it locally.
+
+## Setup and Installation
+
+### Setting up the repository locally
+
+1. First fork the repo to your account.  
+   Go to the forked repo and clone it to your local machine:
+
+```sh
+git clone https://github.com/<your_username>/ReEngine-IT-MERN.git
+```
+
+This will make a copy of the code to your local machine.
+
+2. Now move to the `ReEngine-IT-MERN` directory.
+
+```sh
+cd ReEngine-IT-MERN
+```
+
+3. Now check the remote of your local code by:
+
+```sh
+git remote -v
+```
+
+The response should look like:
+
+```sh
+origin	https://github.com/<username>/ReEngine-IT-MERN.git (fetch)
+origin	https://github.com/<username>/ReEngine-IT-MERN.git (push)
+```
+
+To add upstream to remote, run:
+
+```sh
+git remote add upstream https://github.com/Grumpyyash/ReEngine-IT-MERN.git
+```
+
+Again run `git remote -v`, the response should look like:
+
+```sh
+origin	https://github.com/<username>/ReEngine-IT-MERN.git (fetch)
+origin	https://github.com/<username>/ReEngine-IT-MERN.git (push)
+upstream	https://github.com/Grumpyyash/ReEngine-IT-MERN.git (fetch)
+upstream	https://github.com/Grumpyyash/ReEngine-IT-MERN.git (push)
+```
+
+4. Once the remote is set, install all the necessary dependencies by the following command:
+
+```sh
+npm install
+```
+### Run locally
+
+Run the below command to start the server:
+
+```sh
+npm start
+```
+Go to: [http://localhost:3000](http://localhost:4000)
