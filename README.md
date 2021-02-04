@@ -1,5 +1,5 @@
 # ReEngine-IT
-![ReEngine-IT](https://github.com/Grumpyyash/ReEngine-IT/blob/master/repic.png)
+![ReEngine-IT](https://github.com/Grumpyyash/ReEngine-IT-MERN/blob/main/repic.png)
 
 ## The Idea
 This application is just inspired by some regular activities that happen every year in our college. The purchase and sell of only once used labcoats for chemistry practicals and drafters and drawing kit for Engineering design. This website provides an easy and intercative interface for buyers and sellers to communicate and have a smooth "bussiness" over the application. However this has not been limited to only drafters and lab coats but it is also extended to many electrical and other technical appliances.
