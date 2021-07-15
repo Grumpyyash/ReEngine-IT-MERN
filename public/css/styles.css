@@ -5,6 +5,16 @@ body {
   text-align: center;
   margin-top: 20px;
 }
+.card-title {
+  color: #002E6E !important;
+  font-weight: bold;
+}
+.btn-primary {
+  margin-top: 10px;
+}
+.card-category {
+  opacity: 0.8;
+}
 .navbar {
   background-color: #2874f0;
   color: white;
