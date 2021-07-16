@@ -93,7 +93,7 @@ app.get("/home", function(req, res){
         });
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -110,17 +110,22 @@ app.get("/", function(req, res){
 })
 
 app.get("/login", function(req, res){
-  res.render("login");
+  res.render("login", {text: false});
 })
 app.get("/register", function(req, res){
   res.render("register");
 })
 
+app.get("/logout", function(req, res){
+  req.logout();
+  res.redirect("/");
+});
+
 app.get("/personSell", function(req, res){
   if(req.isAuthenticated()){
     res.render("personSell");
   } else {
-    res.render("login")
+    res.render("login", { text: "You will need to login first to use this feature" })
   }  
 });
 
@@ -134,7 +139,7 @@ app.get("/demands", function(req, res){
       res.render("demands", {personBuy: personBuy});
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }  
 });
 
@@ -142,7 +147,7 @@ app.get("/consumer", function(req, res){
   if(req.isAuthenticated()){
     res.render("consumer");
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -150,7 +155,7 @@ app.get("/category", function(req, res){
   if(req.isAuthenticated()){
     res.render("category");
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -163,7 +168,7 @@ app.get("/phones", function(req, res){
       });
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   } 
 });
 
@@ -176,7 +181,7 @@ app.get("/computers", function(req, res){
       });
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -189,7 +194,7 @@ app.get("/laptops", function(req, res){
       });
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -202,7 +207,7 @@ app.get("/electronics", function(req, res){
       });
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -215,7 +220,7 @@ app.get("/drafters", function(req, res){
       });
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -228,7 +233,7 @@ app.get("/labCoats", function(req, res){
       });
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -241,7 +246,7 @@ app.get("/others", function(req, res){
       });
     });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
@@ -476,7 +481,7 @@ app.post("/search", function(req, res){
     }
   });
   } else {
-    res.render("login");
+    res.render("login", { text: "You will need to login first to use this feature" });
   }
 });
 
