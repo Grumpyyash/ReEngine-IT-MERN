@@ -7,7 +7,7 @@ body {
 }
 .dashboard-left {
   text-align: left;
-  padding: 20px;
+  padding: 30px 20px;
 }
 .dashboard-right {
   text-align: center;
@@ -18,6 +18,9 @@ body {
 .dashboard-para {
   margin-top: 30px;
   opacity: 0.8;
+}
+.dashboard-button {
+  margin-top: 20px;
 }
 .dashboard-img {
   margin: auto;
@@ -34,7 +37,7 @@ body {
 }
 .card-title {
   color: #002E6E !important;
-  font-weight: bold;
+  font-weight: 700px;
 }
 .btn-primary {
   margin-top: 10px;

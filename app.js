@@ -85,16 +85,28 @@ const Labcoat = mongoose.model("Labcoat", sellSchema);
 const Other = mongoose.model("Other", sellSchema);
 
 
-app.get("/", function(req, res){
-  Sell.find({}, function(err, personSell){
-    res.render("home", {
-      personSell: personSell
-      });
-  });
+app.get("/home", function(req, res){
+  if(req.isAuthenticated()){
+    Sell.find({}, function(err, personSell){
+      res.render("home", {
+        personSell: personSell
+        });
+    });
+  } else {
+    res.render("login");
+  }
 });
 
-app.get("/dashboard", function(req, res){
-  res.render("dashboard");
+app.get("/", function(req, res){
+  if(req.isAuthenticated()){
+    Sell.find({}, function(err, personSell){
+      res.render("home", {
+        personSell: personSell
+        });
+    });
+  } else {
+    res.render("dashboard");
+  }
 })
 
 app.get("/login", function(req, res){
@@ -105,88 +117,132 @@ app.get("/register", function(req, res){
 })
 
 app.get("/personSell", function(req, res){
-  res.render("personSell");
+  if(req.isAuthenticated()){
+    res.render("personSell");
+  } else {
+    res.render("login")
+  }  
 });
 
 app.get("/manual", function(req, res){
-  res.render("manual");
+    res.render("manual"); 
 });
 
 app.get("/demands", function(req, res){
-  Demand.find({}, function(err, personBuy){
-    res.render("demands", {personBuy: personBuy});
-  });
+  if(req.isAuthenticated()){
+    Demand.find({}, function(err, personBuy){
+      res.render("demands", {personBuy: personBuy});
+    });
+  } else {
+    res.render("login");
+  }  
 });
 
 app.get("/consumer", function(req, res){
-  res.render("consumer");
+  if(req.isAuthenticated()){
+    res.render("consumer");
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/category", function(req, res){
-  res.render("category");
+  if(req.isAuthenticated()){
+    res.render("category");
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/phones", function(req, res){
-  Phone.find({}, function(err, phones){
-    res.render("categoryDetail", {
-      item: phones,
-      name: "MOBILES"
+  if(req.isAuthenticated()){
+    Phone.find({}, function(err, phones){
+      res.render("categoryDetail", {
+        item: phones,
+        name: "MOBILES"
+      });
     });
-  });
+  } else {
+    res.render("login");
+  } 
 });
 
 app.get("/computers", function(req, res){
-  Computer.find({}, function(err, computers){
-    res.render("categoryDetail", {
-      item: computers,
-      name: "COMPUTERS"
+  if(req.isAuthenticated()){
+    Computer.find({}, function(err, computers){
+      res.render("categoryDetail", {
+        item: computers,
+        name: "COMPUTERS"
+      });
     });
-  });
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/laptops", function(req, res){
-  Laptop.find({}, function(err, laptops){
-    res.render("categoryDetail", {
-      item: laptops,
-      name: "LAPTOPS"
+  if(req.isAuthenticated()){
+    Laptop.find({}, function(err, laptops){
+      res.render("categoryDetail", {
+        item: laptops,
+        name: "LAPTOPS"
+      });
     });
-  });
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/electronics", function(req, res){
-  Electronic.find({}, function(err, electronics){
-    res.render("categoryDetail", {
-      item: electronics,
-      name: "ELECTRONICS"
+  if(req.isAuthenticated()){
+    Electronic.find({}, function(err, electronics){
+      res.render("categoryDetail", {
+        item: electronics,
+        name: "ELECTRONICS"
+      });
     });
-  });
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/drafters", function(req, res){
-  Drafter.find({}, function(err, drafters){
-    res.render("categoryDetail", {
-      item: drafters,
-      name: "DRAFTERS"
+  if(req.isAuthenticated()){
+    Drafter.find({}, function(err, drafters){
+      res.render("categoryDetail", {
+        item: drafters,
+        name: "DRAFTERS"
+      });
     });
-  });
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/labCoats", function(req, res){
-  Labcoat.find({}, function(err, labCoats){
-    res.render("categoryDetail", {
-      item: labCoats,
-      name: "LABCOATS"
+  if(req.isAuthenticated()){
+    Labcoat.find({}, function(err, labCoats){
+      res.render("categoryDetail", {
+        item: labCoats,
+        name: "LABCOATS"
+      });
     });
-  });
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/others", function(req, res){
-  Other.find({}, function(err, others){
-    res.render("categoryDetail", {
-      item: others,
-      name: "OTHER PRODUCTS"
+  if(req.isAuthenticated()){
+    Other.find({}, function(err, others){
+      res.render("categoryDetail", {
+        item: others,
+        name: "OTHER PRODUCTS"
+      });
     });
-  });
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/logout", function(req, res){
@@ -393,7 +449,8 @@ app.post("/demands", function(req, res){
 });
 
 app.post("/search", function(req, res){
-  const requestedItem = _.lowerCase(req.body.search);
+  if(req.isAuthenticated()){
+    const requestedItem = _.lowerCase(req.body.search);
   let x = 0;
   Sell.find({}, function(err, personSell){
     personSell.forEach(function(item){
@@ -418,6 +475,9 @@ app.post("/search", function(req, res){
       res.render("notFound");
     }
   });
+  } else {
+    res.render("login");
+  }
 });
 
 app.get("/products/:productName", function(req, res){
