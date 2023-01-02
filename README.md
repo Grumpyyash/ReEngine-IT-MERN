@@ -22,7 +22,7 @@ There is always a scope of improvement in everything including this project as w
 
 ## Visit Online
 
-This website is hosted at [https://quiet-brushlands-77835.herokuapp.com/](https://quiet-brushlands-77835.herokuapp.com/)
+This website is hosted at [https://reengine-it.onrender.com/](https://reengine-it.onrender.com/)
 
 ## Getting Started
 
@@ -93,4 +93,4 @@ Run the below command to start the server:
 npm start
 ```
 
-Go to: [http://localhost:3000](http://localhost:4000)
+Go to: [http://localhost:3000](http://localhost:3000)
